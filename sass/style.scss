@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', Arial, sans-serif;
+    color: white;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 4vw;
+}
+body {
+    background-color: #0c8fbd;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 7.9411vw;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3.97056vw;
+}
+
+.buttonSetAddress {
+    height: 5.29vw;
+    width: 9.26465vw;
+    border: 0.2647vw solid #ffffff;
+    border-radius: 2.6470vw;
+    background-color: #0c8fbd;
+}
+
+.switch {
+    height: 5.29vw;
+    width: 5.29vw;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: relative;
+}
+.switchOff {
+    right: 9.26465vw;
+}
+.switchOn {
+    right: 5.29vw;
+}
+
+.row1 {
+    justify-content: space-around;
+    background-color: white;
+    height: 10.58vw;
+    width: 90vw;
+    border-radius: 1.3235vw;
+        color: black;
+}
+
+.localisationForm {
+    height: 7.9411vw;
+    width: 37.0586vw;
+    background-color: #FFFFFF;
+    border: none;
+    color: #404040;
+    font-size: 5vw;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #B0B0B0;
+    font-size: 3vw;
+    padding-left: 3.9705vw;
+}
+.localisationButton {
+    width: 7.9411vw;
+    height: 7.9411vw;
+    background-color: white;
+    background-image: url("../images/pin5.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    opacity: 0.8;
+    border: none;
+}
+.buttonShowResult {
+    height: 10.58vw;
+    width: 47.6467vw;
+    border:  0.2647vw solid #ffffff;
+    border-radius: 5.29vw;
+    background-color: #ffffff;
+    color: #404040;
+    // font-size: 5vw;
+}
+.active {
+    display: flex;
+    flex-direction: column;
+}
+.nonActive {
+    display: none;
+}
+
+
+.row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5.29vw;
+}
+.stationCard {
+    width: 90vw;
+    height: auto;
+
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    margin-top: 6.6176vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.stationCardFirstRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.distanceArea, .statusArea, .adressArea {
+    display: flex;
+    flex-direction: column;
+}
+.distanceArea, .statusArea {
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 8vw;
+}
+.distanceArea {
+    height: 100%;
+    width: 20%;
+    p {
+        font-size: 140%;
+        font-weight: bold;
+        font-style: italic;
+    }
+}
+.adressArea {
+    height: 100%;
+    width: 60%;
+    justify-content: space-around;
+    padding-left: 3vw;
+    .title {
+        font-size: 120%;
+        font-weight: bold;
+        padding-top: 5vw;
+        font-style: normal;
+    }
+}
+.statusArea {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    div {
+        font-size: 2.8vw;
+        font-weight: bold;
+    }
+}
+.status {
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+.statusOk {
+    background-color: #5DEB12;
+    background-image: url("../images/checkmark.png");
+    background-size: 55%;
+    background-position: center;
+}
+.statusNook {
+    background-color: #EB1212;
+    background-image: url("../images/checkmarknot.png");
+    background-size: 55%;
+    background-position: center;
+}
+.statusQuestion {
+    background-color: #80888C;
+    background-image: url("../images/checkmarkQuestion.png");
+    background-size: 55%;
+    background-position: center;
+}
+
+
+.stationCardSecondRow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.underline {
+    width: 80vw;
+    border-bottom: 0.25vw solid white;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+.biggerText {
+    font-style: normal;
+    font-size: 4.4vw;
+    padding-top: 1.5vw;
+}
+.smallerText {
+    font-size: 3.2vw;
+    padding-top: 1.5vw;
+    text-decoration: none;
+    span {
+        font-size: 3.2vw;
+        font-weight: bold;
+    }
+}
+.infoArea {
+    display: flex;
+    justify-content: flex-start;
+}
+.boo{
+    padding-top: 1.5vw;
+    height: 100%;
+    width: 11vw;
+    span{
+        font-size: 3.2vw;
+        font-weight: bold;
+    }
+}
+.boo1 {
+    max-width: 85%;
+}
+
+
+.stationCardThirdRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.descryptionArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .descryption {
+        font-weight: bold;
+        font-size: 3.3vw;
+    }
+}
+.descryption {
+     font-size: 3.2vw;
+     padding-top: 0.8vw;
+         width: 30vw;
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+}
+.connection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 3vw;
+}
+.chargeSpeed, .plugType, .numberOfStations {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chargePicture {
+    height: 12vw;
+    width: 15vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.slow {
+    background-image: url("../images/slow.png");
+}
+.fast {
+    background-image: url("../images/fast.png");
+}
+.rapid{
+    background-image: url("../images/rapid.png");
+}
+.plugPicture {
+    height: 12vw;
+    width: 15vw;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.plug1 {
+    background-image: url("../images/schuko2.png");
+}
+.plug2 {
+    background-image: url("../images/chademo.png");
+}
+.plug3 {
+    background-image: url("../images/css.png");
+    background-size: 50%;
+}
+.plug4 {
+    background-image: url("../images/j1772.png");
+}
+.plug5 {
+    background-image: url("../images/mennekes.png");
+}
+.plug6 {
+    background-image: url("../images/tesla.png");
+}
+.plug7 {
+    background-image: url("../images/cee5.png");
+}
+.other {
+    background-image: url("../images/noo.png");
+    background-size: 80%;
+}
+.quantity {
+    height: 12vw;
+    // width: 15vw;
+    font-size: 10vw;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.stationCardFourthRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.photo {
+    width: 23vw;
+    height: 14vw;
+}
+
+
+.stationCardFifthRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navigateButton {
+    height: 8vw;
+    width: 20vw;
+    border:  0.2647vw solid #ffffff;
+    border-radius: 4vw;
+    background-color: #ffffff;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+        color: #404040;
+        font-size: 3vw;
+        font-weight: bold;
+
+    a {
+        color: #404040;
+        font-size: 3vw;
+        font-weight: bold;
+        text-decoration: none;
+        outline: none;
+    }
+}
+.okno {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 100;
+}
+
+
+
+.divMoreButton {
+    display: flex;
+    justify-content: center;
+}
+.moreButton {
+    height: 7.94vw;
+    width: 13.23vw;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+    background-position: center;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+}
+.moreMoreButton {
+    background-image: url("../images/more.png");
+}
+.moreLessButton {
+    background-image: url("../images/less.png");
+}
+
+.suggestion-item--active {
+    color: black;
+    div {
+    color: black;
+    }
+}
+cos {
+    color: black;
+}
